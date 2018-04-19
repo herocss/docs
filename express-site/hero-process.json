@@ -1,0 +1,16 @@
+{
+    "apps": [
+      {
+        "name": "hero-site-dev",
+        "script": "./hero-site-script.js",
+        "watch": false,
+        "cwd": "/home/userftp/node/hero-site/ui/dev/current",
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "env_production": {
+          "NODE_ENV": "production"
+        }
+      }
+    ]
+  }
