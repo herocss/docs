@@ -14,10 +14,10 @@ app.get('/static/*', compression(), function (req, res, next) {
     next();
 });
 
-app.use(express.static(path.join(__dirname, '../dist')));
+app.use(express.static(path.join(__dirname, './public')));
 
 app.get('*', function (req, res) {
-    res.sendFile('index.html', { 'root': path.join(__dirname, '../dist/') });
+    res.sendFile('index.html', { 'root': path.join(__dirname, './public/') });
 });
 
 // catch 404 and forward to error handler
