@@ -19,3 +19,13 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+To start coinventure-ui in pm2
+
+cd to environment folder (dev or prod)
+
+run
+pm2 start ./current/express-site/hero-process.json
+OR
+pm2 start ./current/express-site/hero-process-prod.json
