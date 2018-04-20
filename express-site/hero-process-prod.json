@@ -2,7 +2,7 @@
     "apps": [
       {
         "name": "hero-site-prod",
-        "script": "express-site/hero-site-script.js",
+        "script": "./express-site/hero-site-script.js",
         "watch": false,
         "cwd": "/home/userftp/node/hero-site/ui/prod/current/",
         "env": {
