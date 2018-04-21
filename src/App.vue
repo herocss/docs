@@ -6,13 +6,13 @@
                 <router-link to="/" class="brand">herocss</router-link>
         </div>
          <div class="nav-right">
-                <menu-container>
-                    <button class="h-bars always-display" menu="nav-menu">
+                <menu-container v-on:click="navOpen = !navOpen">
+                    <button class="h-bars always-display">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </button>
-                    <nav-menu id="nav-menu">
+                    <nav-menu v-bind:class="{ open: navOpen }">
                       <router-link to="/start" class="nav-menu-item">Getting started</router-link>
                       <router-link to="/documentation" class="nav-menu-item">Documentation</router-link>
                     </nav-menu>
@@ -39,6 +39,11 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  data: function () {
+    return {
+      navOpen: false
+    }
+  }
 };
 </script>

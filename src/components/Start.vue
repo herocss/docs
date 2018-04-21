@@ -22,7 +22,7 @@
 
             <h3><strong>Optional:</strong> Include hero.js</h3>
             <p>If you would like to use the drop-down menu with built in functionality from hero include <code>hero.js</code>.
-            <br /><strong>NOTE:</strong> If you are using a Single page framework (Angular, React, Vue) Don't include hero.js. Use your framework's built-in click event to optionally apply the open class to the <code>nav-menu</code> element to expand and collapse it.</p>
+            <br /><strong>NOTE:</strong> If you are using a Single page framework (Angular, React, Vue) Don't include hero.js. Use your framework's built-in click event to optionally apply the <code>open</code> class to the <code>nav-menu</code> element to expand and collapse it.</p>
             <pre><code>&lt;script src=&quot;hero.js&quot;&gt;&lt;/script&gt;</code></pre>
 
             <h3><strong>Recommended:</strong> Include Roboto font from Google fonts</h3>

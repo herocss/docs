@@ -75,6 +75,31 @@
           <div class="card">
             <h2>Nav-menu</h2>
             <p><code>nav-menu</code> creates a responsive drop-down menu for the navbar.</p>
+            <p>In this example the nav-menu is only visible on small displays because we applied the <code>show-cs</code> class.</p>
+            <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;nav-left&quot;&gt;
+        &lt;a href class=&quot;brand&quot;&gt;brand&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;nav-right&quot;&gt;
+        &lt;a href class=&quot;hide-xs&quot;&gt;dogs&lt;/a&gt;
+        &lt;a href class=&quot;hide-xs&quot;&gt;cats&lt;/a&gt;
+        &lt;a href class=&quot;hide-xs&quot;&gt;lizards&lt;/a&gt;
+        &lt;a href class=&quot;hide-xs&quot;&gt;bears&lt;/a&gt;
+        &lt;menu-container class=&quot;show-xs&quot;&gt;
+            &lt;button class=&quot;h-bars&quot; menu=&quot;nav-menu&quot;&gt;
+                &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+            &lt;/button&gt;
+            &lt;nav-menu id=&quot;nav-menu&quot;&gt;
+                &lt;a href class=&quot;nav-menu-item&quot;&gt;dogs&lt;/a&gt;
+                &lt;a href class=&quot;nav-menu-item&quot;&gt;cats&lt;/a&gt;
+                &lt;a href class=&quot;nav-menu-item&quot;&gt;lizards&lt;/a&gt;
+                &lt;a href class=&quot;nav-menu-item&quot;&gt;bears&lt;/a&gt;
+            &lt;/nav-menu&gt;
+        &lt;/menu-container&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
       </div>
       <navbar class="light">
@@ -87,13 +112,13 @@
                 <a href class="hide-xs">cats</a>
                 <a href class="hide-xs">lizards</a>
                 <a href class="hide-xs">bears</a>
-                <menu-container class="show-xs">
+                <menu-container class="show-xs" v-on:click="navOpen = !navOpen">
                     <button class="h-bars" menu="nav-menu-1">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </button>
-                    <nav-menu id="nav-menu-1">
+                    <nav-menu id="nav-menu-1" v-bind:class="{ open: navOpen }">
                         <a href class="nav-menu-item">dogs</a>
                         <a href class="nav-menu-item">cats</a>
                         <a href class="nav-menu-item">lizards</a>
@@ -103,5 +128,22 @@
             </div>
         </div>
     </navbar>
+    <div class="container">
+        <div class="card">
+            <h2><strong>Note:</strong> For Single Page Applications</h2>
+            <p>If you plan on using hero with a single page framework (Angular, React, Vuejs) use the built in click handler and class binding for applying the <code>open</code> class to the <code>nav-menu</code> element.
+            </p>
+        </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+      return {
+          navOpen: false
+      }
+  }
+}
+</script>
