@@ -7,14 +7,24 @@
             <p>There are a few ways to install hero.</p>
             <h3>NPM:</h3>
             <pre><code>npm install herocss</code></pre>
+
             <h3>Download from the repository:</h3>
             <a href="https://github.com/ajb32x/hero/tree/master/dist">https://github.com/ajb32x/hero/tree/master/dist</a>
             <h2>Code</h2>
             <p>A few things need to be set in your page for hero to work properly</p>
             <h3>Set doctype to HTML5</h3>
             <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+
             <h3>Set the viewport meta tag to be responsive</h3>
             <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+            <h3>Include the hero css file</h3>
+            <pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;hero.min.css&quot; /&gt;</code></pre>
+
+            <h3><strong>Optional:</strong> Include hero.js</h3>
+            <p>If you would like to use the drop-down menu with built in functionality from hero include <code>hero.js</code>.
+            <br /><strong>NOTE:</strong> If you are using a Single page framework (Angular, React, Vue) Don't include hero.js. Use your framework's built-in click event to optionally apply the open class to the <code>nav-menu</code> element to expand and collapse it.</p>
+            <pre><code>&lt;script src=&quot;hero.js&quot;&gt;&lt;/script&gt;</code></pre>
+
             <h3><strong>Recommended:</strong> Include Roboto font from Google fonts</h3>
             <pre><code class="html">&lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"&gt;</code></pre>
             <h2>Example</h2>
