@@ -14,7 +14,7 @@
             </div>
             <div class="h-column col-xs-1 col-sm-2 col-md-3">
                 <h2 class="center">Why Hero</h2>
-                <p>Hero was created as a lightweight css template to do design how I want.</p>
+                <p>Hero is a lightweight css framework with no external dependencies.</p>
             </div>
             <div class="h-column col-xs-1 col-sm-2 col-md-3">
                 <h2 class="center">Getting started</h2>

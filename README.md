@@ -1,6 +1,6 @@
 # hero-site
 
-> A Vue.js project
+> The site herocss.com
 
 ## Build Setup
 
