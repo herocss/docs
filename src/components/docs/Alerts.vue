@@ -42,23 +42,26 @@
     &lt;button class=&quot;btn icon-btn&quot;&gt;&amp;times;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             <div class="alert default">
-                <span>Alert default</span>
+                <span>
+                    Alert default
+                    <a href>link</a>
+                </span>
             </div>
             <div class="alert success">
-                <span>Alert success</span>
+                <span>Alert success <a href>link</a></span>
             </div>
             <div class="alert primary">
-                <span>Alert primary</span>
+                <span>Alert primary <a href>link</a></span>
             </div>
             <div class="alert warn">
-                <span>Alert warn</span>
+                <span>Alert warn <a href>link</a></span>
             </div>
             <div class="alert danger">
-                <span>Alert danger</span>
+                <span>Alert danger <a href>link</a></span>
             </div>
-            <p>Alerts support a button to be dismissed.</p>
+            <h6>Alerts support a button to be dismissed.</h6>
             <div class="alert primary">
-                <span>This alert has a dismiss button.</span>
+                <span>This alert has a dismiss button. It also contains a <a href>link</a>.</span>
                 <button class="btn icon-btn">&times;</button>
             </div>
         </div>
