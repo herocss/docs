@@ -60,7 +60,7 @@ export default {
   // eslint-disable-next-line
   beforeMount() {
     // eslint-disable-next-line
-    hljs.initHighlightingOnLoad();
+    // hljs.initHighlightingOnLoad();
   }
 };
 </script>
