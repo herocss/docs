@@ -11,7 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "herocss": "^0.4.0",
+    "herocss": "^0.5.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

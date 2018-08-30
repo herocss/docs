@@ -41,12 +41,64 @@
 &lt;button class=&quot;btn btn-primary&quot;&gt;primary&lt;/button&gt;
 &lt;button class=&quot;btn btn-warn&quot;&gt;warn&lt;/button&gt;
 &lt;button class=&quot;btn btn-danger&quot;&gt;danger&lt;/button&gt;</code></pre>
-                <a href="#" class="btn btn-default">link</a>
-                <button class="btn btn-default">default</button>
-                <button class="btn btn-success">success</button>
-                <button class="btn btn-primary">primary</button>
-                <button class="btn btn-warn">warn</button>
-                <button class="btn btn-danger">danger</button>
+                <form>
+                    <a href="#" class="btn btn-default">link</a>
+                    <button class="btn btn-default">default</button>
+                    <button class="btn btn-success">success</button>
+                    <button class="btn btn-primary">primary</button>
+                    <button class="btn btn-warn">warn</button>
+                    <button class="btn btn-danger">danger</button>
+                </form>
+                <br />
+
+                <p>Hero has a class <code>btn-lg</code> that can be used in combination with <code>btn</code> to create a larger button.</p>
+
+                <form>
+                    <a href="#" class="btn btn-default btn-lg">link</a>
+                    <button class="btn btn-default btn-lg">default</button>
+                    <button class="btn btn-success btn-lg">success</button>
+                    <button class="btn btn-primary btn-lg">primary</button>
+                    <button class="btn btn-warn btn-lg">warn</button>
+                    <button class="btn btn-danger btn-lg">danger</button>
+                </form>
+                <br />
+
+                <div class="panel dark h-column center">
+                    <div>
+                        <h2>Ghost buttons</h2>
+                    </div>
+                    <p>Contextual ghost buttons were added in version 0.5.</p>
+
+<pre><code class="dark">&lt;button class=&quot;btn btn-success-ghost&quot;&gt;success&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary-ghost&quot;&gt;primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-warn-ghost&quot;&gt;warn&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger-ghost&quot;&gt;danger&lt;/button&gt;
+</code></pre>
+
+                    <div>
+                        <button class="btn btn-success-ghost">success</button>
+                        <button class="btn btn-primary-ghost">primary</button>
+                        <button class="btn btn-warn-ghost">warn</button>
+                        <button class="btn btn-danger-ghost">danger</button>
+                    </div>
+                    <br />
+                    <br />
+                    <p>The <code>btn-lg</code> class can be combined with the ghost button classes to create large ghost buttons.</p>
+
+<pre><code class="dark">&lt;button class=&quot;btn btn-success-ghost btn-lg&quot;&gt;success&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary-ghost btn-lg&quot;&gt;primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-warn-ghost btn-lg&quot;&gt;warn&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger-ghost btn-lg&quot;&gt;danger&lt;/button&gt;
+</code></pre>
+
+                    <div>
+                        <button class="btn btn-success-ghost btn-lg">success</button>
+                        <button class="btn btn-primary-ghost btn-lg">primary</button>
+                        <button class="btn btn-warn-ghost btn-lg">warn</button>
+                        <button class="btn btn-danger-ghost btn-lg">danger</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

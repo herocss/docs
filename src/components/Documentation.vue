@@ -11,6 +11,7 @@
             <li><a href="#responsiveness">Responsiveness</a></li>
             <li><a href="#alerts">Alerts</a></li>
             <li><a href="#input">Input</a></li>
+            <li><a href="#code">Code</a></li>
         </ul>
     </div>
     <typography></typography>
@@ -21,6 +22,7 @@
     <responsiveness></responsiveness>
     <alerts></alerts>
     <input-docs></input-docs>
+    <code-docs></code-docs>
 </div>
 </template>
 
@@ -33,6 +35,7 @@ import Alerts from "./docs/Alerts";
 import Input from "./docs/Input";
 import Responsiveness from "./docs/Responsiveness";
 import Navbar from "./docs/Navbar";
+import Code from "./docs/Code";
 
 export default {
   components: {
@@ -43,7 +46,8 @@ export default {
     alerts: Alerts,
     inputDocs: Input,
     responsiveness: Responsiveness,
-    navbar: Navbar
+    navbar: Navbar,
+    codeDocs: Code
   },
   // eslint-disable-next-line
   beforeMount() {
